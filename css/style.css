@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+/*Mengatur font dan background*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #48cae4;
+}
+/*Membuat container menjadi flexbox dan kotak login berada di tengah */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+/* Mengatur ukuran kotak login dan background*/
+.loginbox {
+    margin: 150px 0px 0px 0px;
+    flex-basis: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*mengatur posisi judul halaman Login */
+.loginbox h2 {
+    border-bottom: 1px solid #cccccc;
+    color: #48cae4;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 0 20px;
+}
+
+/*Mengatur agar box input dan select memenuhi ukuran form*/
+input, select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+}
+
+/*Mengatur tampilan tombol submit */
+input[type="submit"] {
+    background-color: #48cae4;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*Mengatur warna tombol submit ketika ada cursor*/
+input[type="submit"]:hover {
+    background-color: #48cae4;
+} 
+
+/* ===========================================*/
+/* Mengatur CSS Grid*/
+/* ===========================================*/
+
+/*Grid untuk Navbar*/
+.grid-navbar {
+    grid-area: header;
+    background: #48cae4;
+    color: #fff;
+    height: 70px;
+}
+
+/*Grid untuk Sidebar*/
+.grid-sidebar {
+    grid-area: sidebar;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+/*Grid untuk topheader*/
+.grid-head {
+    grid-area: topheader;
+    background: #48cae4;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0px;
+    height: 150px;
+}
+
+/*Grid untuk Content*/
+.grid-content {
+    grid-area: main;
+    background: #fff;
+    padding: 20px;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "sidebar topheader topheader topheader topheader topheader "
+        "sidebar main main main main main";
+
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ===========================================*/
+/* Akhir Mengatur CSS Grid*/
+/* ===========================================*/
+
+/*Membuat Header Sistem Akademik berada di kiri*/
+.navbarheader {
+    padding: 20px;
+    display: block;
+    float: left;
+    font-size: 19px;
+}
+
+/*Membuat Menu Logout berada sebelah kanan*/
+.logout {
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+}
+
+.logout a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.783);
+}
+
+/*Pengaturan untuk gambar profile*/
+.profilepic {
+    text-align: center;
+}
+    
+/*Membuat border bundar untuk gambar profile*/
+.imground {
+    border-radius: 50%;
+    width: 80px;
+}
+
+/*Pengaturan untuk menu navigasi*/
+.navigation {
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #656565;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.navigation ul {
+    display: block;
+    list-style-type: disc;
+    width: 100%;
+    margin: 0px;
+}
+
+.navigation li {
+    display: block;
+    list-style-type: disc;
+    padding: 10px 0 10px 0;
+    width: 100%;
+}
+
+.navigation .active {
+    color: #fff;
+    background-color: #48cae4;
+    border-radius: 3px;
+    padding: 10px 50px 10px 10px;
+    width: 100;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+/*Pengaturan untuk judul konten*/
+.judul {
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc;
+} 
+
